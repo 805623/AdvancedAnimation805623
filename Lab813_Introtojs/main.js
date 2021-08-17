@@ -25,7 +25,12 @@ function animate() {
     draw();     // render
     requestAnimationFrame(animate); // next cycle
 }
-
+function checkEdges(){
+    if(x=canvas.width, y=canvas.height, x=0, y=0){
+        dx=-dx;
+        dy=-dy;
+    }
+}
 // move the circle to a new location
 function update() {
     x += dx;    // update x coordinate of location with x velocity
@@ -34,7 +39,7 @@ function update() {
 
 // render a circle
 function draw() {
-    let radius = 15; // local variable radius of the circle
+  let radius = 15; // local variable radius of the circle
     // create the circle path
     context.beginPath();    // clear old path
     // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc
