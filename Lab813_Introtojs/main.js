@@ -12,11 +12,11 @@ function init(){
     context = canvas.getContext("2d");
 
     x = y = 100;    // initial x,y canvas location
-    dx = dy = 2;    // velocity in x and y directions
+    dx = dy = 3;    // velocity in x and y directions
     x2=y2=300;
     dx2=dy2=5;
     x3=y3=500;
-    dx3=dy3=1;
+    dx3=dy3=2;
     x4=y4=150;
     dx4=dy4=6;
     x5=y5=387;
